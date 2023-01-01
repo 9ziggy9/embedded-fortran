@@ -1,3 +1,3 @@
-program HELLO
+function HELLO()
         print *, "Hello, World! <--- FROM FORTRAN"
-end program HELLO
+end function HELLO

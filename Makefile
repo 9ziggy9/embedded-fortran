@@ -1,6 +1,7 @@
 CFLAGS = -Wall -Werror -Wconversion -pedantic
 
-all: hello_c hello_f
+all: hello_f.o hello_c.o
+	cc -o debug hello_f.o hello_c.o -lgfortran
 
 .PHONY: run
 run: all
